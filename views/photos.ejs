@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photos</title>
+</head>
+<body>
+    <div class="photo-list">
+        <h2>Photos</h2>
+        <ul>
+            <% photos.forEach(function(photo) { %>
+                <li>
+                    <h3><%= photo.title %></h3>
+                    <img src="/public/uploads/<%= photo.image %>" alt="<%= photo.title %>" />
+                </li>
+            <% }); %>
+        </ul>
+    </div>
+    
+</body>
+</html>
